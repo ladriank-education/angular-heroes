@@ -1,0 +1,10 @@
+<div id="msgPanel" *ngIf="messageService.messages.length">
+
+  <h2>Notificaciones</h2>
+  <button class="clear" (click)="messageService.clear()">Limpiar</button>
+  <div id="msgList">
+  	<span *ngFor='let message of messageService.messages'>
+  	&gt; {{message}}
+  </span>
+	</div>
+</div>

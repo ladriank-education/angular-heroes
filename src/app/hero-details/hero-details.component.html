@@ -1,0 +1,12 @@
+<button type="button" (click)="goBack()"><img id="back" src="assets/back.png"/>Atras</button>
+<div id="details" *ngIf="hero">
+	<h2><b>Detalles del heroe: {{hero.name}}</b></h2>
+	<div><span>ID: </span>{{hero.id}}</div>
+	<div><span>Nombre: </span>{{hero.name}}</div>
+	<img id="heroimg" [src]="hero.img"/>
+	<div><span><a class="link" (click)="[toggleNameChangerVisibility()]">&gt; Cambiar nombre</a></span><br>
+	  <label *ngIf="isVisible" id="name">Nombre:
+	    <input [(ngModel)]="hero.name" placeholder="Nombre"/>
+	  </label>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+<div id="scroll">
+  <ul class="agents">
+    <li *ngFor="let h of heroesList" routerLink="/details/{{h.id}}">
+    <a>
+      <span class="badge">{{h.id}}</span>{{h.name}}
+    </a>
+    </li>
+  </ul>
+</div>

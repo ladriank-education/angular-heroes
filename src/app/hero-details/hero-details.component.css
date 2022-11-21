@@ -1,0 +1,81 @@
+* {
+  font-family: arial;
+}
+
+#details {
+  background-color: lightgray;
+  display: inline-block;
+  position: fixed;
+  left: 18em;
+  top: 6.5em;
+  padding-left: 1em;
+  height: 12.75em;
+  width: 50em;
+
+  border-right-style: solid;
+  border-bottom-style: solid;
+  
+  border-right-width: 0.75em;
+  border-bottom-width: 0.25em;
+
+  /*
+  border-right-radius: 1.5em;
+  border-bottom-radius: 1em;
+  */
+  
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+
+  border-right-color: darkgray;
+  border-bottom-color: darkgray;
+  
+}
+
+.link {
+  position: relative;
+  top: 1em;
+  color: #47a6ff;
+  cursor: pointer;
+}
+
+div label {
+  position: relative;
+  top: 2em;
+}
+
+#heroimg {
+  display: inline-block;
+  position: absolute;
+  top: 0.4em;
+  left: 37em;
+  width: 12em;
+  height: 12em;
+  /*border:  1px solid black;*/
+  border-radius: 1em;
+  background-color: darkgray;
+}
+
+button {
+  position: fixed;
+  background-color: #eee;
+  top: 7.85em;
+  left: 84.5em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: #cfd8dc;
+}
+
+#back {
+  width: 14px;
+  display: inline-block;
+  margin-right: 10px;
+}

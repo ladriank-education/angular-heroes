@@ -1,0 +1,75 @@
+/* MessagesComponent's private CSS styles */
+#msgPanel {
+  position: fixed;
+  top: 19.5em;
+  left: 1.2em;
+  width: 15em;
+}
+
+#msgList::-webkit-scrollbar {
+  width: 0.35em;
+  height: 0.5em;
+}
+
+#msgList::-webkit-scrollbar-track {
+  background: transparent;
+}
+#msgList::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+#msgList {
+  position: relative;
+  top: -2em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 9.65em;
+}
+
+
+#msgList span {
+  display: inline-block;
+  background-color: lightgray;
+  margin-bottom: 0.25em;
+  margin-right: 0.35em;
+  width: auto;
+}
+
+h2 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+body, input[text], button {
+  color: crimson;
+  font-family: Cambria, Georgia;
+}
+
+button.clear {
+  position: relative;
+  display: inline-block;
+  left: 13.15em;
+  top: -3.35em;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+button.clear {
+  color: #666;
+}
